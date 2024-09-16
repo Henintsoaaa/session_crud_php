@@ -33,7 +33,7 @@
 
 
         // Redirection après la suppression
-        header('Location: display.php');
+        header('Location: ../display.php');
         exit(); // Assurez-vous d'arrêter l'exécution du script après la redirection
 
     
