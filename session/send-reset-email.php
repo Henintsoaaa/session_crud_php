@@ -1,5 +1,5 @@
 <?php
-   include "config.php";
+   include "../config.php";
 
     ini_set('display_errors', 1);   
     ini_set('display_startup_errors', 1);
@@ -19,6 +19,11 @@
             // Vérifiez si l'email existe dans la base de données
             $stmt = $pdo->prepare('SELECT id FROM users WHERE email = :email');
             $stmt->execute(['email' => $email]);
+
+            $changeMDP = $pdo->prepare('UPDATE users SET pass = "123456" WHERE email = :email');
+            $stmt->execute(['email' => $email]);
+
+            header('Location: ../index.html');
 
             if ($stmt->rowCount() > 0) {
                  // Générer un jeton unique pour la réinitialisation

@@ -71,7 +71,7 @@
         
         // Lien pour ajouter un nouvel étudiant et se deconnecter
         echo "<div class='flex gap-3 justify-center items-center pt-7'><a href='./action/formulaire.php' class='border-2 border-secondary rounded-lg px-2'>Ajouter</a>";
-        echo "<a href='logOut.php' class='border-2 border-secondary rounded-lg px-2'>Se deconnecter</a></div>";
+        echo "<a href='./session/logOut.php' class='border-2 border-secondary rounded-lg px-2'>Se deconnecter</a></div>";
 
         echo "</div>";
     }
