@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="w-screen h-screen bg-tertiary">
+    <div class="flex justify-center items-center w-full h-full"> 
+        <form action="./display.php" method="POST" class=" bg-primary p-3 rounded-sm w-2/6 h-3/4">
+            <h1 class=" text-white text-xl font-semibold pb-4">Connectez-vous!</h1>
+            <div class="flex flex-col gap-5 justify-center pt-3">
+                <div>
+                    <input type="text" id="username" name="username" placeholder="username" required class=" outline-none rounded-md pl-1 text-xs h-6 w-full"><br>
+                </div>
+                <div class=" flex flex-col gap-1">
+                    <input type="password" id="pass" name="pass" placeholder="password" required class=" outline-none rounded-md pl-1 text-xs h-6 w-full">
+                    <div class="flex justify-end">
+                        <a href="./session/pass.html" class=" text-xs text-white underline w-full text-end">Mot de passe oublié ?</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <input type="submit" value="Se connecter" class=" p-1 text-white text-xs border-2 border-white rounded-lg mt-9 mr-2">
+            </div>
+          
+        </form>
+    </div>
+    
+</body>
+</html>
